@@ -1,13 +1,12 @@
 {
   "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
+  "questions": [{
+      "question": "1.In the slope deflection method, what type of behavior is assumed for materials?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Non-elastic",
+        "b": "Small deformations",
+        "c": "Large deformations",
+        "d": "Elastic"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,16 +14,70 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "2. Which of the following structures is best suited for the application of the slope deflection method?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Simply supported beam",
+        "b": "Cantilever beam",
+        "c": "Multistory building frame",
+        "d": "Truss"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. The slope-deflection equations relate _______ .",
+      "answers": {
+        "a": "Rotations and axial loads",
+        "b": "Moments and shears",
+        "c": "Forces and deformations",
+        "d": "Displacements and support reactions"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+
+    {
+      "question": "4. The degree of static indeterminacy of a rigid-jointed space frame is _______.",
+      "answers": {
+        "a": "m + r - 2j",
+        "b": "m + r - 3j",
+        "c": "3m + r - 3j",
+        "d": "6m + r - 6j"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    
+    
+    {
+      "question": "5. In the slope deflection method, equilibrium equations at joints are used to_______ .",
+      "answers": {
+        "a": "Calculate rotations",
+        "b": "Determine support reactions",
+        "c": "Ensure that forces and moments are in balance",
+        "d": "Find axial forces"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
