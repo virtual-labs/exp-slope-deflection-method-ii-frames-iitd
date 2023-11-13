@@ -35,12 +35,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "3. The slope-deflection equations relate _______ .",
+      "question": "3. A two step solution process is needed for  _______ .",
       "answers": {
-        "a": "Rotations and axial loads",
-        "b": "Moments and shears",
-        "c": "Forces and deformations",
-        "d": "Displacements and support reactions"
+        "a": "Sway frame ",
+        "b": "Non-sway frame",
+        "c": "Both a & b",
+        "d": "None of above"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -48,17 +48,17 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
 
     {
-      "question": "4. The degree of static indeterminacy of a rigid-jointed space frame is _______.",
+      "question": "4. A single bay, single story frame under horizontal loads only is _______.",
       "answers": {
-        "a": "m + r - 2j",
-        "b": "m + r - 3j",
-        "c": "3m + r - 3j",
-        "d": "6m + r - 6j"
+        "a": "Symmetrical frame ",
+        "b": "Anti-Symmetrical frame",
+        "c": "Both a & b",
+        "d": "None of above "
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -66,7 +66,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     

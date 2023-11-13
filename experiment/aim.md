@@ -1,1 +1,1 @@
-#### This experiment aims To determine the end moment diagram of the beam using Slope deflection method.  
+#### This experiment aims to analyse a beam using slope deflection method, resulting in rotations, member end forces and moments, shear force and bending moment diagrams and the deflected profile. 

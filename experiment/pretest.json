@@ -18,12 +18,29 @@
       "difficulty": "beginner"
     },
     {
-      "question": "2. Which of the following is not an assumption of the slope deflection method?",
+      "question": "2. What are unknown displacements for a non-sway frame?  ",
       "answers": {
-        "a": " Elastic behavior of materials",
-        "b": "Rigid joints with no relative rotation",
-        "c": "Large deformations",
-        "d": "Small deformations"
+        "a": "Displacement ",
+        "b": "Rotations ",
+        "c": "Displacements and rotationss",
+        "d": "Non of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3.What are the unknown values assigned at the ends of each member in the slope deflection method?",
+      "answers": {
+        "a": "Forces",
+        "b": "Rotations",
+        "c": "Displacements and Rotations",
+        "d": "Moments"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -35,12 +52,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "3.What are the unknown values assigned at the ends of each member in the slope deflection method?",
+      "question": "4. Which of the following shall be a non-sway frame? ",
       "answers": {
-        "a": "Forces",
-        "b": "Rotations",
-        "c": "Displacements",
-        "d": "Moments"
+        "a": "Symmetrical frame under horizontal loads ",
+        "b": "Symmetrical frame under vertical loads ",
+        "c": "Symmetrical frame under both horizontal & vertical loads ",
+        "d": "None of above "
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -48,24 +65,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "4. What is the primary objective of using the slope deflection method?",
-      "answers": {
-        "a": "Calculate deflections in a structure.",
-        "b": "Determine support reactions",
-        "c": "Find the external loads on a structure",
-        "d": "Analyze internal forces and deformations in indeterminate structures"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "d",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
