@@ -322,7 +322,7 @@ function MomentAB() {
 else        {
   
   // Display an error message
- document.getElementById("wrong3a").innerHTML = "Wrong Input EIΘ<sub>B</sub> = -7.466 & EIδ = 17.6"  ;
+ document.getElementById("wrong3a").innerHTML = "Wrong Input EIΘ<sub>B</sub> = -7.46 & EIδ = 17.6"  ;
 
 document.getElementById("wrong3a").style.display = "block";
 }
