@@ -1,13 +1,46 @@
 {
   "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
+  "questions": [{
+      "question": "1.In the slope deflection method, what type of behavior is assumed for materials?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Non-elastic",
+        "b": "Small deformations",
+        "c": "Large deformations",
+        "d": "Elastic"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the following structures is best suited for the application of the slope deflection method?",
+      "answers": {
+        "a": "Simply supported beam",
+        "b": "Cantilever beam",
+        "c": "Multistory building frame",
+        "d": "Truss"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. A two step solution process is needed for  _______ .",
+      "answers": {
+        "a": "Sway frame ",
+        "b": "Non-sway frame",
+        "c": "Both a & b",
+        "d": "None of above"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -18,13 +51,33 @@
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
+
     {
-      "question": "This is a Sample Question 2?",
+      "question": "4. A single bay, single story frame under horizontal loads only is _______.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Symmetrical frame ",
+        "b": "Anti-Symmetrical frame",
+        "c": "Both a & b",
+        "d": "None of above "
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    
+    
+    {
+      "question": "5. In the slope deflection method, equilibrium equations at joints are used to_______ .",
+      "answers": {
+        "a": "Calculate rotations",
+        "b": "Determine support reactions",
+        "c": "Ensure that forces and moments are in balance",
+        "d": "Find axial forces"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
