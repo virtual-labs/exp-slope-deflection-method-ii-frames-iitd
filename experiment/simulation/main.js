@@ -830,7 +830,6 @@ function navNext1h()
 {
   document.getElementById("canvas1f").style.visibility="hidden";
   document.getElementById("canvas1h").style.visibility="visible";
-  document.getElementById("addspecimen3b").style.visibility="visible";
   document.getElementById("addspecimen3c").style.visibility="visible";
 
 
