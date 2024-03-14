@@ -1,92 +1,69 @@
 {
   "version": 2.0,
   "questions": [{
-      "question": "1.In the slope deflection method, what type of behavior is assumed for materials?",
+      "question": "1. In cantilever beam, slope and deflection at free end is _____",
       "answers": {
-        "a": "Non-elastic",
-        "b": "Small deformations",
-        "c": "Large deformations",
-        "d": "Elastic"
+        "a": "zero",
+        "b": "minimum ",
+        "c": "maximum",
+        "d": "none of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "d",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "2. Which of the following structures is best suited for the application of the slope deflection method?",
-      "answers": {
-        "a": "Simply supported beam",
-        "b": "Cantilever beam",
-        "c": "Multistory building frame",
-        "d": "Truss"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "3. A two step solution process is needed for  _______ .",
-      "answers": {
-        "a": "Sway frame ",
-        "b": "Non-sway frame",
-        "c": "Both a & b",
-        "d": "None of above"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
 
-    {
-      "question": "4. A single bay, single story frame under horizontal loads only is _______.",
-      "answers": {
-        "a": "Symmetrical frame ",
-        "b": "Anti-Symmetrical frame",
-        "c": "Both a & b",
-        "d": "None of above "
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    
-    
-    {
-      "question": "5. In the slope deflection method, equilibrium equations at joints are used to_______ .",
-      "answers": {
-        "a": "Calculate rotations",
-        "b": "Determine support reactions",
-        "c": "Ensure that forces and moments are in balance",
-        "d": "Find axial forces"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "In cantilever beam, the slope and deflection at free end is maximum."
+
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the following statements is/are true for a simply supported beam?",
+      "answers": {
+        "a": "Deflection at supports in a simply supported beam is maximum",
+        "b": "Deflection is maximum at a point where slope is zero",
+        "c": "Slope is minimum at supports in a simply supported beam",
+        "d": "All of the above"
+      },
+      "explanations": {
+
+        "b": "In simply supported beam the deflection is maximum at a point where slope is zero."
+
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. The slope-deflection equations relate _______ .",
+      "answers": {
+        "a": "Rotations and axial loads",
+        "b": "Moments and shears",
+        "c": "Forces, moments and deformations",
+        "d": "Displacements and support reactions"
+      },
+      "explanations": {
+
+        "c": "The slope-deflection equations relates Forces, moments and deformations"
+
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Why it is recommended to draw the bending moment diagram on the tension side",
+      "answers": {
+        "a": "It looks pleasing",
+        "b": "Ease of visulization to structural design in deciding the face for reinforcement bars",
+        "c": "Positive moments bottom side",
+        "d": "none of the above"
+      },
+      "explanations": {
+
+        "b": "It is recommended to draw the bending moment diagram on the tension side to provide ease of visulization to structural design in deciding the face for reinforcement bars",
+
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
+    
   ]
 }

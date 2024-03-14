@@ -1,1 +1,1 @@
-##  Slope Deflection Method II (Frames)
+##  Slope Deflection Method-I (Beams)

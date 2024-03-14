@@ -1,15 +1,15 @@
     //////////////////////////////////////////////////Fixed End Moment for span AB////////////////////////////////////////////////////
 
-    function FixedmomentBC() {
+    function FixedmomentAB() {
       const w1 = document.getElementById("w1").value;
     
       // Check if input1 is 4 and input2 is 1
-      if (w1 == 4 ) { 
+      if (w1 == 50 ) { 
         // Slowly display the text after 2 seconds
         setTimeout(function() {
-          document.getElementById("mfbc").innerHTML = "-12 kNm";
+          document.getElementById("mfab").innerHTML = "36 kNm";
           document.getElementById("wrong1a").style.visibility="hidden";
-        }, 800);
+        }, 500);
         setTimeout(function() {
           document.getElementById("text4").style.visibility="visible";
           document.getElementById("text5").style.visibility="visible";
@@ -17,19 +17,19 @@
           document.getElementById("L1").style.visibility="visible";
           document.getElementById("box2").style.visibility="visible";
           document.getElementById("button2").style.visibility="visible";
-        
+          document.getElementById("button1").style.visibility="hidden";
     
-        }, 1200);
+        }, 800);
         
         
-        document.getElementById("mfbc").style.display = "block"; 
+        document.getElementById("mfab").style.display = "block"; 
         document.getElementById("text4").style.display = "block"; 
         document.getElementById("text5").style.display = "block"; 
         document.getElementById("text6").style.display = "block"; 
         document.getElementById("L1").style.display = "block"; 
         document.getElementById("box2").style.display = "block"; 
         document.getElementById("wrongbox1").style.display = "block"; 
-        
+        document.getElementById("button1").style.display = "block"; 
     
         }
     
@@ -39,13 +39,13 @@
             document.getElementById("wrong1a").textContent = "Please Fill the Required Fields.";
     
             
-          }, 1000);
+          }, 600);
           document.getElementById("wrong1a").style.display = "block";
     
       } else {
         // Display an error message
         setTimeout(function() {
-       document.getElementById("wrong1a").innerHTML = "Wrong Input, Value for Load W = 4 kN/m";
+       document.getElementById("wrong1a").innerHTML = "Wrong Input. The value for Load W = 50";
       }, 1000);
        document.getElementById("wrong1a").style.display = "block";
       }
@@ -54,18 +54,19 @@
 
 //////////////////////////////////////////////////Fixed End Moment for span BA////////////////////////////////////////////////////
 
-function FixedmomentCB() {
+function FixedmomentBA() {
   const L1 = document.getElementById("L1").value;
   // Check if input1 is 4 and input2 is 1
-  if (L1 == 36) { 
+  if (L1 == 4) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
-      document.getElementById("mfba").textContent = " 12 kNm" ;
       document.getElementById("wrong1b").style.visibility="hidden";
-    }, 800);
+    }, 1);
+    setTimeout(function() {
+      document.getElementById("mfba").textContent = " -24 kNm" ;
+    }, 500);
 
     setTimeout(function() {
-      document.getElementById("nextButton1").style.visibility="visible";
       document.getElementById("addspecimen3").style.visibility="visible";
       document.getElementById("text7").style.visibility="visible";
       document.getElementById("text8").style.visibility="visible";
@@ -73,8 +74,8 @@ function FixedmomentCB() {
       document.getElementById("L2a").style.visibility="visible";
       document.getElementById("box3").style.visibility="visible";
       document.getElementById("button3").style.visibility="visible";
-
-    }, 1200);
+      document.getElementById("button2").style.visibility="hidden";
+    }, 800);
     document.getElementById("mfba").style.display = "block"; 
     document.getElementById("addspecimen3").style.display = "block"; 
     document.getElementById("text7").style.visibility="block";
@@ -83,15 +84,16 @@ function FixedmomentCB() {
     document.getElementById("L2a").style.visibility="block";
     document.getElementById("box3").style.visibility="block";
     document.getElementById("button3").style.visibility="block";
-    document.getElementById("nextButton1").style.visibility="block";
-
+    document.getElementById("button2").style.visibility="block";
     }
 
-    if (w1 == "" ) { 
+    if (L1 == "" ) { 
       // Slowly display the text after 2 seconds
       setTimeout(function() {
-        document.getElementById("wrong1b").textContent = "Please Fill the Required Fields.";        
-      }, 1000);
+        document.getElementById("wrong1b").innerHTML = "Please Fill the Required Fields.";      
+        
+        
+      }, 600);
       document.getElementById("wrong1b").style.display = "block";
 
   } else  {
@@ -99,45 +101,147 @@ function FixedmomentCB() {
 
   setTimeout(function() {
     // Display an error message
-   document.getElementById("wrong1b").innerHTML = "Wrong Input. The value of L<sup>2</sup> = 36 ";
+   document.getElementById("wrong1b").innerHTML = "Wrong Input. The value of l<sub>1</sub> = 2<sup>2</sup> = 4 ";
   }, 1000);
    document.getElementById("wrong1b").style.display = "block";
   }
   }
 
-    
+    //////////////////////////////////////////////////Fixed End Moment for span BC////////////////////////////////////////////////////
 
+    function FixedmomentBC() {
+      const L2a = document.getElementById("L2a").value;
+      // Check if input1 is 4 and input2 is 1
+      if (L2a == 25 ) { 
+        // Slowly display the text after 2 seconds
+        setTimeout(function() {
+          document.getElementById("mfbc").textContent = "50 kNm" ;
+
+          document.getElementById("wrong1c").style.visibility="hidden";
+        }, 1000);
+
+        setTimeout(function() {
+          document.getElementById("text10").style.visibility="visible";
+          document.getElementById("text11").style.visibility="visible";
+          document.getElementById("text12").style.visibility="visible";
+          document.getElementById("w2").style.visibility="visible";
+          document.getElementById("box4").style.visibility="visible";
+          document.getElementById("button4").style.visibility="visible";
+          document.getElementById("button3").style.visibility="hidden";
+        }, 2500);
+        
+        document.getElementById("mfbc").style.display = "block"; 
+        document.getElementById("text10").style.visibility="block";
+            document.getElementById("text11").style.visibility="block";
+            document.getElementById("text12").style.visibility="block";
+            document.getElementById("w2").style.visibility="block";
+            document.getElementById("box4").style.visibility="block";
+            document.getElementById("button4").style.visibility="block";
+        document.getElementById("wrong1c").style.visibility="hidden";
+        document.getElementById("button3").style.visibility="hidden";
+         }
+    
+        if (L2a == "" ) { 
+          // Slowly display the text after 2 seconds
+          setTimeout(function() {
+            document.getElementById("wrong1c").textContent = "Please Fill the Required Fields." 
+          }, 1000);
+          document.getElementById("wrong1c").style.display = "block";
+    
+      } else {
+        // Display an error message
+
+      setTimeout(function() {
+       document.getElementById("wrong1c").innerHTML = "Wrong Input. The value of L<sup>2</sup> = 5<sup>2</sup>";
+      }, 1000);
+       document.getElementById("wrong1c").style.display = "block";
+      }
+      }
+      
+      //////////////////////////////////////////////////Fixed End Moment for span CB////////////////////////////////////////////////////
+
+    function FixedmomentCB() {
+      const w2 = document.getElementById("w2").value;
+      
+      // Check if input1 is 4 and input2 is 1
+      if (w2 == 24 ) { 
+        // Slowly display the text after 2 seconds
+        setTimeout(function() {
+          document.getElementById("Button4").style.visibility="hidden";
+        }, 1);
+        setTimeout(function() {
+          document.getElementById("mfcb").textContent = "-50 kNm" ;
+          document.getElementById("wrong1d").style.visibility="hidden";
+          document.getElementById("nextButton1").style.visibility="visible";
+          document.getElementById("Questext").style.visibility="visible";
+          document.getElementById("Button4b").style.visibility="visible";
+          
+        }, 1000);
+        
+        document.getElementById("mfcb").style.display = "block"; 
+        document.getElementById("wrong1d").style.visibility="block";
+        document.getElementById("nextButton1").style.visibility="block";
+        document.getElementById("Button4").style.visibility="block";
+        document.getElementById("Button4b").style.visibility="block";
+        document.getElementById("Questext").style.visibility="block";
+        }
+    
+        if (w2 == "" ) { 
+          // Slowly display the text after 2 seconds
+          setTimeout(function() {
+            document.getElementById("wrong1d").textContent = "Please Fill the Required Fields.";
+    
+            
+          }, 2500);
+          document.getElementById("wrong1d").style.display = "block";
+    
+      } else {
+        // Display an error message
+      setTimeout(function() {
+       document.getElementById("wrong1d").innerHTML = "Wrong Input. The value of W = 24";
+      }, 1000);
+       document.getElementById("wrong1d").style.display = "block";
+      }
+      }
+
+ 
 //////////////////////////////////////////////////Page Complete////////////////////////////////////////////////////
-//////////////////////////////////////////////////w for SPAN AB////////////////////////////////////////////////////
-function Mab() {
-  const Mfab = document.getElementById("Mfab").value;
-  const ColumnL = document.getElementById("ColumnL").value;
+//////////////////////////////////////////////////Slope Deflection Equation////////////////////////////////////////////////////
+function displayText2a() {
+  const input1a2 = document.getElementById("input1a2").value;
+  const input2a2 = document.getElementById("input2a2").value;
+  const input3a2 = document.getElementById("input3a2").value;
 
   // Check if input1 is 4 and input2 is 1
-  if (Mfab == 0 && ColumnL == 4) { 
+  if (input1a2 == 36 && input2a2 == 5 && input3a2 == 0 ) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
       document.getElementById("wrong2a").style.visibility="hidden";
+      document.getElementById("button4b").style.visibility="hidden";
     }, 1);
     setTimeout(function() {
-      document.getElementById("outputMab").innerHTML = "M<sub>AB</sub> = 2EIΘ<sub>B</sub> - 1.5 EIδ";
+      document.getElementById("output1a2").innerHTML = "M<sub>AB</sub> = 36 + 0.4 EIΘ<sub>B</sub>";
     }, 500);
     setTimeout(function() {
       document.getElementById("text16").style.visibility="visible";
       document.getElementById("text17").style.visibility="visible";
+      document.getElementById("eqn1").style.visibility="visible";
+      document.getElementById("eqn2").style.visibility="visible";
+      document.getElementById("eqn3").style.visibility="visible";
+      document.getElementById("eqn4").style.visibility="visible";
       document.getElementById("text17b").style.visibility="visible";
       document.getElementById("box6").style.visibility="visible";
-      document.getElementById("output1b2").innerHTML = "M<sub>BA</sub> = 4EIΘ<sub>B</sub> - 1.5 EIδ" ;
+      document.getElementById("output1b2").innerHTML = "M<sub>BA</sub> = -24 + 0.8 EIΘ<sub>B</sub>" ;
     }, 800);
     setTimeout(function() {
-      document.getElementById("output1c2").innerHTML = "M<sub>CD</sub> = 4EIΘ<sub>C</sub> - 1.5 EIδ";
+      document.getElementById("output1c2").innerHTML = "M<sub>BC</sub> = 50 + 0.8 EIΘ<sub>B</sub>";
       document.getElementById("box7").style.visibility="visible";
       document.getElementById("text18").style.visibility="visible";
       document.getElementById("text18b").style.visibility="visible";
 
     }, 1100);
     setTimeout(function() {
-      document.getElementById("output1d2").innerHTML = "M<sub>DC</sub> = 4EIΘ<sub>C</sub> - 1.5 EIδ" ;
+      document.getElementById("output1d2").innerHTML = "M<sub>CB</sub> = -50 + 0.4 EIΘ<sub>B</sub>" ;
       document.getElementById("text19").style.visibility="visible";
       document.getElementById("box8").style.visibility="visible";
       document.getElementById("text19b").style.visibility="visible";
@@ -149,15 +253,19 @@ function Mab() {
 
     }, 1500);
     
-    document.getElementById("outputMab").style.display = "block"; 
+    document.getElementById("output1a2").style.display = "block"; 
     document.getElementById("output1b2").style.display = "block"; 
     document.getElementById("output1c2").style.display = "block"; 
     document.getElementById("output1d2").style.display = "block"; 
     document.getElementById("nextButton2").style.display = "block"; 
-
+    document.getElementById("button24b").style.display = "block";
     document.getElementById("text16").style.display = "block"; 
     document.getElementById("text17").style.display = "block"; 
     document.getElementById("text17b").style.display = "block"; 
+    document.getElementById("eqn1").style.display = "block";
+    document.getElementById("eqn2").style.display = "block";
+    document.getElementById("eqn3").style.display = "block";
+    document.getElementById("eqn4").style.display = "block";
     document.getElementById("text18").style.display = "block"; 
     document.getElementById("text18b").style.display = "block"; 
     document.getElementById("text19").style.display = "block"; 
@@ -169,7 +277,7 @@ function Mab() {
 
     }
 
-    if (Mfab == "" && ColumnL == "") { 
+    if (input1a2 == "" && input2a2 == "" && input3a2 == "" ) { 
       // Slowly display the text after 2 seconds
       setTimeout(function() {
         document.getElementById("wrong2a").textContent = "Please Fill the Required Fields.";
@@ -180,334 +288,184 @@ function Mab() {
 
   } else {
     // Display an error message
-   document.getElementById("wrong2a").innerHTML = "Wrong Input. The value of M<sup>F</sup><sub>AB</sub>= 0, L= 4";
+   document.getElementById("wrong2a").innerHTML = "Wrong Input. The value of M<sup>F</sup><sub>AB</sub> = 36 , L = 5, Θ<sub>A</sub> = 0 ";
   
    document.getElementById("wrong2a").style.display = "block";
   }
   }
 
-//////////////////////////////////////////////////Mbc for beam BC////////////////////////////////////////////////////
-function Mbc() {
-  const Mfbc = document.getElementById("Mfbc").value;
-  const BeamL = document.getElementById("BeamL").value;
 
-  // Check if input1 is 4 and input2 is 1
-  if (Mfbc == -12 && BeamL == 6) { 
-    // Slowly display the text after 2 seconds
-    setTimeout(function() {
-      document.getElementById("wrong2b").style.visibility="hidden";
-    }, 1);
-      setTimeout(function() {
-      document.getElementById("outputMbc").innerHTML = "M<sub>BC</sub> = -12 + EIΘ<sub>B</sub> + 0.5 EIΘ<sub>C</sub>";
-    }, 500);
-    setTimeout(function() {
-      document.getElementById("text20").style.visibility="visible";
-      document.getElementById("text20a").style.visibility="visible";
-      document.getElementById("text20b").style.visibility="visible";
-      document.getElementById("outputMcb").innerHTML = "M<sub>CB</sub> = +12 + 0.5EIΘ<sub>B</sub> + EIΘ<sub>C</sub>" ;
-    }, 800);
-
-
-    setTimeout(function() {
-      document.getElementById("text21").style.visibility="visible";
-      document.getElementById("text22").style.visibility="visible";
-      document.getElementById("text23").style.visibility="visible";
-      document.getElementById("text24").style.visibility="visible";
-      document.getElementById("text25").style.visibility="visible";
-      document.getElementById("text26").style.visibility="visible";
-      document.getElementById("text27").style.visibility="visible";
-      document.getElementById("box9").style.visibility="visible";
-      document.getElementById("box11").style.visibility="visible";
-      document.getElementById("nextButton3").style.visibility="visible";
-      document.getElementById("addspecimen2d").style.visibility="visible";
-
-
-    }, 1500);
-    
-    document.getElementById("outputMbc").style.display = "block"; 
-    document.getElementById("outputMcb").style.display = "block"; 
-    document.getElementById("nextButton3").style.display = "block"; 
-    document.getElementById("text20").style.display = "block"; 
-    document.getElementById("text20a").style.display = "block"; 
-    document.getElementById("text20b").style.display = "block"; 
-    document.getElementById("box9").style.display = "block"; 
-    document.getElementById("box11").style.display = "block"; 
-
-    document.getElementById("addspecimen2d").style.display = "block"; 
-
-
-
-    }
-
-    if (Mfbc == "" && BeamL == "") { 
-      // Slowly display the text after 2 seconds
-      setTimeout(function() {
-        document.getElementById("wrong2b").textContent = "Please Fill the Required Fields.";
-
-        
-      }, 1000);
-      document.getElementById("wrong2b").style.display = "block";
-
-  } else {
-    // Display an error message
-   document.getElementById("wrong2b").innerHTML = "Wrong Input. The value of M<sup>F</sup><sub>BC</sub>= -12, L= 6";
-  
-   document.getElementById("wrong2b").style.display = "block";
-  }
-  }
 ///////////////////////////////////////////////////Page Complete////////////////////////////////////////////////////
-
-
 //////////////////////////////////////////////////CALCULATION OF FINAL MOMENTS////////////////////////////////////////////////////
 
-function MomentAB() {
+function finalmoments() {
   const EIQb1 = document.getElementById("EIQb1").value;
-  const EIDelta1 = document.getElementById("EIDelta1").value;
+
 
 
   // Check if input1 is 3 and input2 is 2
-  if ( EIQb1 == 7.46 && EIDelta1 == 17.6 ) { 
+  if (EIQb1 == -16.25 ) { 
     // Slowly display the text after 2 seconds
+
+    
     setTimeout(function() {
       document.getElementById("wrong3a").style.visibility="hidden";
     }, 1);
-      setTimeout(function() {
-      document.getElementById("outputMab2").innerHTML = "M<sub>AB</sub> = -11.47 kNm" ;
-
-          }, 100);
-          setTimeout(function() {
-      document.getElementById("text28").style.visibility="visible";
-      document.getElementById("text29").style.visibility="visible";
-            document.getElementById("text29").style.visibility="visible";
-
-      document.getElementById("outputMba2").innerHTML="M<sub>BA</sub> = 3.47 kNm";
-
+    setTimeout(function() {
+      document.getElementById("Mab").textContent = "29.5 kNm " ;
     }, 800);
     setTimeout(function() {
-      document.getElementById("text30").style.visibility="visible";
-      document.getElementById("text31").style.visibility="visible";
-      document.getElementById("b1").style.visibility="visible";
-      document.getElementById("EIQc").style.visibility="visible";
-      document.getElementById("EIDelta2").style.visibility="visible";
-      document.getElementById("outputMbc2").innerHTML="M<sub>BC</sub> = -3.47 kNm";
-      document.getElementById("outputMcb2").innerHTML="M<sub>CB</sub> = 17.87 kNm";
+            document.getElementById("buttonx").style.visibility="hidden";
+          }, 500);
 
-    }, 1200);
-    
-
-
-    document.getElementById("outputMab2").style.display = "block";
-    document.getElementById("wrong3a").style.display = "block";
-    document.getElementById("text28").style.display = "block";
-    document.getElementById("text29").style.display = "block";
-    document.getElementById("outputMba2").style.display = "block";
-    document.getElementById("text30").style.display = "block";
-    document.getElementById("text31").style.display = "block";
-    document.getElementById("b1").style.display = "block";
-    document.getElementById("EIQc").style.display = "block";
-    document.getElementById("EIDelta2").style.display = "block";
-    document.getElementById("outputMbc2").style.display = "block";
-    document.getElementById("outputMcb2").style.display = "block";
-
-  }
-
-  if (EIQb1 == "" && EIDelta1 == "" ) { 
-    setTimeout(function() {
-      document.getElementById("wrong3a").textContent = "Please Fill the Required Fields.";
-
-      
-    }, 1000);
-    document.getElementById("wrong3a").style.display = "block";
-} 
-else        {
-  
-  // Display an error message
- document.getElementById("wrong3a").innerHTML = "Wrong Input EIΘ<sub>B</sub> = 7.46 & EIδ = 17.6"  ;
-
-document.getElementById("wrong3a").style.display = "block";
-}
-}
-///////////////////////////////////////////////////Page Complete////////////////////////////////////////////////////
-//////////////////////////////////////////////////CALCULATION OF FINAL MOMENTS////////////////////////////////////////////////////
-
-function MomentCD() {
-  const EIQc = document.getElementById("EIQc").value;
-  const EIDelta2 = document.getElementById("EIDelta2").value;
-
-
-  // Check if input1 is 3 and input2 is 2
-  if ( EIQc == 2.13 && EIDelta2 == 17.6 ) { 
-    // Slowly display the text after 2 seconds
-    setTimeout(function() {
-      document.getElementById("wrong3b").style.visibility="hidden";
-    }, 1);
-    setTimeout(function() {
-      document.getElementById("outputMcd2").innerHTML = "M<sub>CD</sub> = -17.87 kNm " ;
-
-          }, 100);
           setTimeout(function() {
-            document.getElementById("nextButton4").style.visibility="visible";
-
-      document.getElementById("text32").style.visibility="visible";
-      document.getElementById("text33").style.visibility="visible";
-      document.getElementById("outputMdc2").innerHTML="M<sub>DC</sub> = -22.13 kNm";
-
+      document.getElementById("text20").style.visibility="visible";
     }, 1000);
-  
+    setTimeout(function() {
+      document.getElementById("text21").style.visibility="visible";
+    }, 1200);
+    setTimeout(function() {
+      document.getElementById("text22").style.visibility="visible";
+    }, 1400);
+    setTimeout(function() {
+      document.getElementById("text23").style.visibility="visible";
+      document.getElementById("nextButton3").style.visibility="visible";
 
-    document.getElementById("wrong3b").style.display = "block";
-    document.getElementById("outputMcd2").style.display = "block";
-    document.getElementById("outputMdc2").style.display = "block";
-    document.getElementById("text32").style.display = "block";
-    document.getElementById("text33").style.display = "block";
-    document.getElementById("nextButton4").style.display = "block";
+
+
+    }, 1600);
+    document.getElementById("Mab").style.display = "block";
+    document.getElementById("buttonx").style.display = "block";
+    document.getElementById("text20").style.display = "block";
+    document.getElementById("text21").style.display = "block";
+    document.getElementById("text22").style.display = "block";
+    document.getElementById("text23").style.display = "block";
+    document.getElementById("nextButton3").style.display = "block";
+
+
 
   }
 
-  if (EIQc == "" && EIDelta2 == "" ) { 
-    setTimeout(function() {
-      document.getElementById("wrong3b").textContent = "Please Fill the Required Fields.";
-
-      
-    }, 1000);
-    document.getElementById("wrong3b").style.display = "block";
-} 
-else        {
-  
-  // Display an error message
- document.getElementById("wrong3b").innerHTML = "Wrong Input EIΘ<sub>C</sub> = 2.13 & EIδ = 17.6"  ;
-
-document.getElementById("wrong3b").style.display = "block";
-}
-}
-///////////////////////////////////////////////////Page Complete////////////////////////////////////////////////////
-//////////////////////////////////////////////////CALCULATION FOR REACTIONS////////////////////////////////////////////////////
-//////////////////////////////////////////////////REACTION- 1////////////////////////////////////////////////////
-
-function reaction1H() {
-  const inputMab = document.getElementById("inputMab").value;
-  const inputMba = document.getElementById("inputMba").value;
-
-
-
-  // Check if input1 is 3 and input2 is 2
-  if (inputMab == 11.47 && inputMba == 3.47 ) { 
-    // Slowly display the text after 2 seconds
-    setTimeout(function() {
-      document.getElementById("wrong4a").style.visibility="hidden";
-    }, 1);
-    setTimeout(function() {
-      document.getElementById("outputHa").innerHTML = "H<sub>A</sub> = 2 kN " ;
-    }, 100);
-
-    setTimeout(function() {
-      document.getElementById("text34").style.visibility="visible";
-      document.getElementById("text35").style.visibility="visible";
-      document.getElementById("outputHa").style.visibility="visible";
-      document.getElementById("b2").style.visibility="visible";
-      document.getElementById("Ha").style.visibility="visible";
-
-      
-
-    }, 1700);
-    
-    document.getElementById("outputHa").style.display = "block";
-    document.getElementById("wrong4a").style.display = "block";
-    document.getElementById("Ha").style.display = "block";
-    document.getElementById("text34").style.display = "block";
-    document.getElementById("text35").style.display = "block";
-    document.getElementById("b2").style.display = "block";
-
-
-    
-  }
-
-    if (inputMab == "" && inputMba == "" ) { 
+    if (EIQb1 == "" ) { 
       setTimeout(function() {
-        document.getElementById("wrong4a").textContent = "Please Fill the Required Fields.";
-  
+        document.getElementById("wrong3a").textContent = "Please fill the required fields";
+
         
-      }, 1800);
-      document.getElementById("wrong4a").style.display = "block";
+      }, 1000);
+      document.getElementById("wrong3a").style.display = "block";
   } 
   else        {
     
     // Display an error message
     setTimeout(function() {
-   document.getElementById("wrong4a").innerHTML = "Wrong Input, M<sub>AB</sub>= 11.47 and M<sub>BA</sub>= 3.47"  ;
-  }, 1);
-  document.getElementById("wrong4a").style.display = "block";
+    document.getElementById("wrong3a").innerHTML = "Wrong Input. The Value of EI&#920;<sub>B</sub> = -16.25";
+  }, 1000);
+   document.getElementById("wrong3a").style.display = "block";
   }
-  }
-//////////////////////////////////////////////////REACTION- 2////////////////////////////////////////////////////
+}
+///////////////////////////////////////////////////Page Complete////////////////////////////////////////////////////
+//////////////////////////////////////////////////CALCULATION FOR REACTIONS////////////////////////////////////////////////////
+//////////////////////////////////////////////////REACTION- 1////////////////////////////////////////////////////
 
-function reaction2H() {
-  const Ha = document.getElementById("Ha").value;
+function reaction1() {
+  const momentatA = document.getElementById("momentatA").value;
+  const momentatB = document.getElementById("momentatB").value;
 
 
 
   // Check if input1 is 3 and input2 is 2
-  if (Ha == -2 ) { 
+  if (momentatA == 29.5 && momentatB == 37 ) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
+      document.getElementById("wrong4a").style.visibility="hidden";
+      document.getElementById("button5").style.visibility="hidden";
+    }, 0);
+    setTimeout(function() {
+      document.getElementById("reactionRA").textContent = "28.5 kN " ;
+    }, 500);
+    setTimeout(function() {
+      document.getElementById("text29").style.visibility="visible";
+      document.getElementById("text30").style.visibility="visible";
+      document.getElementById("text31").style.visibility="visible";
+      document.getElementById("text32").style.visibility="visible";
+      document.getElementById("reactionA").style.visibility="visible";
+      document.getElementById("button6").style.visibility="visible";
+     
+
+
+      
+      
+
+    }, 1700);
+    document.getElementById("wrong4a").style.display = "block";
+    document.getElementById("reactionRA").style.display = "block";
+    document.getElementById("text29").style.display = "block";
+    document.getElementById("text30").style.display = "block";
+    document.getElementById("text31").style.display = "block";
+    document.getElementById("text32").style.display = "block";
+    document.getElementById("reactionA").style.display = "block";
+    document.getElementById("button6").style.display = "block";
+    document.getElementById("button5").style.display = "block";
+    
+
+
+    
+  }
+
+    if (momentatA == "" && momentatB == "" ) { 
+      setTimeout(function() {
+        document.getElementById("wrong4a").textContent = "Please Fill the Required Fields.";
+
+        
+      }, 1000);
+      document.getElementById("wrong4a").style.display = "block";
+  } 
+  else        {
+    
+    // Display an error message
+   document.getElementById("wrong4a").innerHTML = "Wrong Input, M<sub>A</sub> = 29.5 & M<sub>B</sub> = 37"  ;
+
+  document.getElementById("wrong4a").style.display = "block";
+  }
+}
+//////////////////////////////////////////////////REACTION- 2////////////////////////////////////////////////////
+
+function reaction2() {
+  const reactionA = document.getElementById("reactionA").value;
+
+
+
+  // Check if input1 is 3 and input2 is 2
+  if (reactionA == 28.5 ) { 
+    // Slowly display the text after 2 seconds
+    setTimeout(function() {
+      document.getElementById("button6").style.visibility="hidden";
       document.getElementById("wrong4b").style.visibility="hidden";
     }, 1);
     setTimeout(function() {
-      document.getElementById("outputHb").innerHTML = "H<sub>B</sub> = 10 kN " ;
-
-    }, 100);
-    setTimeout(function() {
+      document.getElementById("reactionRB1").textContent = "21.5 kN " ;
+      document.getElementById("text33").style.visibility="visible";
+      document.getElementById("text34").style.visibility="visible";
+      document.getElementById("text35").style.visibility="visible";
       document.getElementById("text36").style.visibility="visible";
-      document.getElementById("text37").style.visibility="visible";
-      document.getElementById("text38").style.visibility="visible";
-      document.getElementById("text39").style.visibility="visible";
-      document.getElementById("outputHc").innerHTML ="H<sub>C</sub> = 10 kN";
-      document.getElementById("outputHd").innerHTML ="H<sub>D</sub> = 10 kN";
-    }, 1000);
-
-    setTimeout(function() {
-      document.getElementById("text40").style.visibility="visible";
-      document.getElementById("text41").style.visibility="visible";
-      document.getElementById("text42").style.visibility="visible";
-      document.getElementById("text43").style.visibility="visible";
-      document.getElementById("inputudl").style.visibility="visible";
-      document.getElementById("inputMba2").style.visibility="visible";
-      document.getElementById("inputMcd2").style.visibility="visible";
-      document.getElementById("b3").style.visibility="visible";
-      document.getElementById("addspecimen2f").style.visibility="visible";
+      document.getElementById("UDL").style.visibility="visible";
+      document.getElementById("button7").style.visibility="visible";
+     
+      document.getElementById("addspecimen3d").style.visibility="visible";
 
     }, 1700);
-      setTimeout(function() {
-        document.getElementById("addspecimen2g").style.visibility="visible";
-      document.getElementById("transwhite1b").style.visibility="visible";
-
-    }, 1900);
-    document.getElementById("wrong4b").style.display = "block";
-    document.getElementById("outputHc").style.display = "block";
-    document.getElementById("outputHd").style.display = "block";
-    document.getElementById("outputHb").style.display = "block";
+    document.getElementById("reactionRB1").style.display = "block";
+  document.getElementById("text33").style.display = "block";
+  document.getElementById("text34").style.display = "block";
+  document.getElementById("text35").style.display = "block";
   document.getElementById("text36").style.display = "block";
-  document.getElementById("text37").style.display = "block";
-  document.getElementById("text38").style.display = "block";
-  document.getElementById("text39").style.display = "block";
-  document.getElementById("text40").style.display = "block";
-  document.getElementById("text41").style.display = "block";
-  document.getElementById("text42").style.display = "block";
-  document.getElementById("text43").style.display = "block";
-  document.getElementById("inputudl").style.display = "block";
-  document.getElementById("inputMba2").style.display = "block";
-  document.getElementById("inputMcd2").style.display = "block";
-  document.getElementById("b3").style.display = "block";
-  document.getElementById("addspecimen2f").style.display = "block";
-  document.getElementById("addspecimen2g").style.display = "block";
-  document.getElementById("transwhite1a").style.display = "block";
-
-
-
-
+  document.getElementById("UDL").style.display = "block";
+  document.getElementById("addspecimen3d").style.display = "block";
+  document.getElementById("button7").style.display = "block";
+  document.getElementById("button6").style.display = "block";
   }
 
-    if (Ha == ""  ) { 
+    if (reactionA == ""  ) { 
       setTimeout(function() {
         document.getElementById("wrong4b").textContent = "Please Fill the Required Fields.";
 
@@ -518,69 +476,105 @@ function reaction2H() {
   else        {
     
     // Display an error message
-   document.getElementById("wrong4b").innerHTML = "Wrong Input, H<sub>A</sub> = -2";
+   document.getElementById("wrong4b").innerHTML = "Wrong Input. Value of Reaction at pt. A i.e R<sub>A</sub> = 28.5";
 
   document.getElementById("wrong4b").style.display = "block";
   }
 }
 //////////////////////////////////////////////////REACTION- 3////////////////////////////////////////////////////
 
-function reactionV() {
-  const inputudl = document.getElementById("inputudl").value;
-  const inputMba2 = document.getElementById("inputMba2").value;
-  const inputMcd2 = document.getElementById("inputMcd2").value;
+function reaction3() {
+  const UDL = document.getElementById("UDL").value;
 
   // Check if input1 is 3 and input2 is 2
-  if (inputudl == 4 && inputMba2 == 3.47 && inputMcd2 == 17.87 ) { 
+  if (UDL == 24 ) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
+      document.getElementById("button7").style.visibility="hidden";
       document.getElementById("wrong4c").style.visibility="hidden";
+      
     }, 1);
     setTimeout(function() {
-      document.getElementById("outputVb").innerHTML = "V<sub>B</sub>= 9.6 kN " ;
-    }, 200);
-
-    setTimeout(function() {
-      document.getElementById("text44").style.visibility="visible";
-      document.getElementById("text45").style.visibility="visible";
-      document.getElementById("outputVc").style.visibility="visible";
-
-    }, 600);
-
-    setTimeout(function() {
-      document.getElementById("outputVc").innerHTML ="V<sub>C</sub>= 14.4 kN";
-      document.getElementById("nextButton6").style.visibility="visible";
+      document.getElementById("reactionRB2").textContent = "56.1 kN " ;
+      document.getElementById("text37").style.visibility="visible";
+      document.getElementById("text38").style.visibility="visible";
+      document.getElementById("text39").style.visibility="visible";
+      document.getElementById("text40").style.visibility="visible";
+      document.getElementById("reactionB2").style.visibility="visible";
+      document.getElementById("button8").style.visibility="visible";
+     
 
     }, 1700);
-
-    document.getElementById("wrong4c").style.display = "block";
-    document.getElementById("outputVb").style.display = "block";
-    document.getElementById("outputVc").style.display = "block";
-    document.getElementById("outputVc").style.display = "block";
-    document.getElementById("text44").style.display = "block";
-  document.getElementById("text45").style.display = "block";
+    document.getElementById("reactionRB2").style.display = "block";
+    document.getElementById("text37").style.display = "block";
+  document.getElementById("text38").style.display = "block";
+  document.getElementById("text39").style.display = "block";
+  document.getElementById("text40").style.display = "block";
   document.getElementById("reactionB2").style.display = "block";
-  document.getElementById("nextButton6").style.display = "block";
-
+  document.getElementById("button8").style.display = "block";
+  document.getElementById("button7").style.display = "block";
   }
 
-    if (inputudl == "" && inputMba2 == "" && inputMcd2 == "" ) { 
+    if (UDL == ""  ) { 
       setTimeout(function() {
         document.getElementById("wrong4c").textContent = "Please Fill the Required Fields.";
 
         
-      }, 1700);
+      }, 1000);
       document.getElementById("wrong4c").style.display = "block";
   } 
   else        {
     
     // Display an error message
-   document.getElementById("wrong4c").innerHTML = "Wrong Input, UDL = 4 kN/m, M<sub>AB</sub>= 3.47 & M<sub>CD</sub>= 17.87 kN";
+   document.getElementById("wrong4c").innerHTML = "Wrong Input. Value of UDL = 24 kN/m (anti clockwise)";
 
   document.getElementById("wrong4c").style.display = "block";
   }
 }
 
+//////////////////////////////////////////////////REACTION- 4////////////////////////////////////////////////////
+
+function reaction4() {
+  const reactionB2 = document.getElementById("reactionB2").value;
+
+  // Check if input1 is 3 and input2 is 2
+  if (reactionB2 == 56.1 ) { 
+    // Slowly display the text after 2 seconds
+    setTimeout(function() {
+      document.getElementById("button8").style.visibility="hidden";
+      document.getElementById("wrong4d").style.visibility="hidden";
+
+    }, 1);
+    setTimeout(function() {
+      document.getElementById("reactionRC").textContent = "63.9 kN " ;
+      document.getElementById("nextButton4").style.visibility="visible";
+      document.getElementById("text41").style.visibility="visible";
+     
+
+    }, 1200);
+    document.getElementById("reactionRC").style.display = "block";
+    document.getElementById("nextButton4").style.visibility="block";
+    document.getElementById("text41").style.visibility="block";
+      document.getElementById("wrong4d").style.visibility="block";
+      document.getElementById("button8").style.display = "block";
+  }
+
+    if (reactionB2 == ""  ) { 
+      setTimeout(function() {
+        document.getElementById("wrong4d").textContent = "Please Fill the Required Fields.";
+
+        
+      }, 1000);
+      document.getElementById("wrong4d").style.display = "block";
+  } 
+  else        {
+    
+    // Display an error message
+   document.getElementById("wrong4d").innerHTML = "Wrong Input. Value of Reaction at pt. C i.e R<sub>C</sub> = -56.1 ";
+
+  document.getElementById("wrong4d").style.display = "block";
+  }
+}
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -612,6 +606,13 @@ document.getElementById("canvas1e").style.visibility="hidden";
 document.getElementById("canvas1f").style.visibility="hidden";
 document.getElementById('s1_1').style.visibility="visible";
 document.getElementById("canvas1").style.visibility="visible";
+
+
+
+
+
+
+
 document.getElementById("text4").style.visibility="hidden";
 document.getElementById("text5").style.visibility="hidden";
 document.getElementById("text6").style.visibility="hidden";
@@ -629,6 +630,7 @@ document.getElementById("button3").style.visibility="hidden";
 document.getElementById("text10").style.visibility="hidden";
 document.getElementById("text11").style.visibility="hidden";
 document.getElementById("text12").style.visibility="hidden";
+document.getElementById("Questext").style.visibility="hidden";
 document.getElementById("w2").style.visibility="hidden";
 document.getElementById("box4").style.visibility="hidden";
 document.getElementById("button4").style.visibility="hidden";
@@ -683,14 +685,35 @@ document.getElementById('addspecimen1').style.animation="addspecimen1 2s forward
 function navNext1b()
 {
   document.getElementById('addspecimen1b').style.visibility="visible";
+  document.getElementById('addspecimen2').style.visibility="visible";
+document.getElementById('addspecimen3').style.visibility="hidden";
+document.getElementById('addspecimen2').style.animation="addspecimen2 2s forwards";
 document.getElementById("canvas1a").style.visibility="hidden";
 document.getElementById("canvas1b").style.visibility="visible";
 document.getElementById("text4").style.visibility="hidden";
 document.getElementById("text5").style.visibility="hidden";
 document.getElementById("text6").style.visibility="hidden";
+document.getElementById("text7").style.visibility="hidden";
+document.getElementById("text8").style.visibility="hidden";
+document.getElementById("text9").style.visibility="hidden";
+document.getElementById("text10").style.visibility="hidden";
+document.getElementById("text11").style.visibility="hidden";
+document.getElementById("text12").style.visibility="hidden";
+document.getElementById("Questext").style.visibility="hidden";
 document.getElementById("box2").style.visibility="hidden";
+document.getElementById("box3").style.visibility="hidden";
+document.getElementById("box4").style.visibility="hidden";
 document.getElementById("L1").style.visibility="hidden";
+document.getElementById("L2a").style.visibility="hidden";
+document.getElementById("w2").style.visibility="hidden";
 document.getElementById("button2").style.visibility="hidden";
+document.getElementById("button3").style.visibility="hidden";
+document.getElementById("button4").style.visibility="hidden";
+
+
+
+
+
 document.getElementById("nextButton1").style.visibility="hidden";
 document.getElementById("wrong1a").style.visibility="visible";
 document.getElementById("wrong1b").style.visibility="visible";
@@ -706,12 +729,18 @@ function navNext1c()
 
 document.getElementById("canvas1b").style.visibility="hidden";
 document.getElementById("canvas1c").style.visibility="visible";
+document.getElementById('addspecimen1ba').style.visibility="visible";
 document.getElementById('addspecimen2b').style.visibility="visible";
+document.getElementById('addspecimen3b').style.visibility="visible";
 document.getElementById("nextButton2").style.visibility="hidden";
 document.getElementById('text16').style.visibility="hidden";
 document.getElementById('box6').style.visibility="hidden";
 document.getElementById('text17').style.visibility="hidden";
 document.getElementById('text17b').style.visibility="hidden";
+document.getElementById('eqn1').style.visibility="hidden";
+document.getElementById('eqn2').style.visibility="hidden";
+document.getElementById('eqn3').style.visibility="hidden";
+document.getElementById('eqn4').style.visibility="hidden";
 document.getElementById('box7').style.visibility="hidden";
 document.getElementById('text18').style.visibility="hidden";
 document.getElementById('text18b').style.visibility="hidden";
@@ -727,25 +756,17 @@ document.getElementById('text19b').style.visibility="hidden";
 
 function navNext1d()
 {
-  document.getElementById("box10").style.visibility="visible";
-
+  document.getElementById('buttonx').style.visibility="visible";
 document.getElementById("canvas1c").style.visibility="hidden";
 document.getElementById("canvas1d").style.visibility="visible";
 document.getElementById('text20').style.visibility="hidden";
-document.getElementById('text20a').style.visibility="hidden";
-document.getElementById('text20b').style.visibility="hidden";
 document.getElementById('text21').style.visibility="hidden";
 document.getElementById('text22').style.visibility="hidden";
 document.getElementById('text23').style.visibility="hidden";
-document.getElementById('text24').style.visibility="hidden";
-document.getElementById('text25').style.visibility="hidden";
-document.getElementById('text26').style.visibility="hidden";
-document.getElementById('text27').style.visibility="hidden";
+document.getElementById('addspecimen1c').style.visibility="visible";
 document.getElementById('addspecimen2c').style.visibility="visible";
-document.getElementById('addspecimen2d').style.visibility="hidden";
+document.getElementById('addspecimen3c').style.visibility="visible";
 document.getElementById("nextButton3").style.visibility="hidden";
-document.getElementById('box9').style.visibility="hidden";
-document.getElementById('box11').style.visibility="hidden";
 
 
 
@@ -758,28 +779,38 @@ document.getElementById('box11').style.visibility="hidden";
 
 function navNext1e()
 {
-
-  document.getElementById("EIQc").style.visibility="hidden";
-document.getElementById("EIDelta2").style.visibility="hidden";
-document.getElementById("b1").style.visibility="hidden";
-document.getElementById("box12").style.visibility="visible";
   document.getElementById('nextButton4').style.visibility="hidden";
 document.getElementById("canvas1d").style.visibility="hidden";
 document.getElementById("canvas1e").style.visibility="visible";
-document.getElementById("text28").style.visibility="hidden";
-document.getElementById("text29").style.visibility="hidden";
-document.getElementById("text30").style.visibility="hidden";
-document.getElementById("text31").style.visibility="hidden";
-document.getElementById("text32").style.visibility="hidden";
-document.getElementById("text33").style.visibility="hidden";
-document.getElementById("Mab").style.visibility="hidden";
-document.getElementById("b1").style.visibility="hidden";
-document.getElementById("Mcd").style.visibility="hidden";
-document.getElementById("wrong3a").style.visibility="hidden";
-document.getElementById("wrong3b").style.visibility="hidden";
-document.getElementById("outputMba2").style.visibility="hidden";
-document.getElementById("outputMbc2").style.visibility="hidden";
-document.getElementById("outputMcb2").style.visibility="hidden";
+document.getElementById('addspecimen1d').style.visibility="visible";
+document.getElementById('addspecimen2d').style.visibility="visible";
+document.getElementById('addspecimen3d').style.visibility="hidden";
+
+document.getElementById('text29').style.visibility="hidden";
+document.getElementById('text30').style.visibility="hidden";
+document.getElementById('text31').style.visibility="hidden";
+document.getElementById('text32').style.visibility="hidden";
+document.getElementById('text33').style.visibility="hidden";
+document.getElementById('text34').style.visibility="hidden";
+document.getElementById('text35').style.visibility="hidden";
+document.getElementById('text36').style.visibility="hidden";
+document.getElementById('text37').style.visibility="hidden";
+document.getElementById('text38').style.visibility="hidden";
+document.getElementById('text39').style.visibility="hidden";
+document.getElementById('text40').style.visibility="hidden";
+document.getElementById('text41').style.visibility="hidden";
+
+document.getElementById('reactionA').style.visibility="hidden";
+document.getElementById('UDL').style.visibility="hidden";
+document.getElementById('reactionB2').style.visibility="hidden";
+document.getElementById('button6').style.visibility="hidden";
+document.getElementById('button7').style.visibility="hidden";
+document.getElementById('button8').style.visibility="hidden";
+document.getElementById('button9').style.visibility="hidden";
+
+
+
+
 
 document.getElementById("nextButton5").style.visibility="hidden";
 
@@ -790,53 +821,22 @@ document.getElementById("nextButton5").style.visibility="hidden";
 
 function navNext1f()
 {
-  document.getElementById("canvas1e").style.visibility="hidden";
+document.getElementById("canvas1e").style.visibility="hidden";
 document.getElementById("canvas1f").style.visibility="visible";
-  document.getElementById("transwhite1b").style.visibility="hidden";
-
-  document.getElementById("b2").style.visibility="hidden";
-  document.getElementById("b3").style.visibility="hidden";
-document.getElementById("Ha").style.visibility="hidden";
-document.getElementById("inputudl").style.visibility="hidden";
-document.getElementById("inputMba2").style.visibility="hidden";
-document.getElementById("inputMcd2").style.visibility="hidden";
-
-document.getElementById("text34").style.visibility="hidden";
-document.getElementById("text35").style.visibility="hidden";
-document.getElementById("text36").style.visibility="hidden";
-document.getElementById("text37").style.visibility="hidden";
-document.getElementById("wrong4a").style.visibility="visible";
-document.getElementById("text38").style.visibility="hidden";
-document.getElementById("text39").style.visibility="hidden";
-document.getElementById("text40").style.visibility="hidden";
-document.getElementById("text41").style.visibility="hidden";
-document.getElementById("text42").style.visibility="hidden";
-document.getElementById("text43").style.visibility="hidden";
-document.getElementById("text44").style.visibility="hidden";
-document.getElementById("text45").style.visibility="hidden";
-document.getElementById("addspecimen2e").style.visibility="visible";
-document.getElementById("addspecimen2f").style.visibility="hidden";
-document.getElementById("addspecimen2g").style.visibility="hidden";
-document.getElementById("wrong4b").style.visibility="visible";
-document.getElementById("wrong4c").style.visibility="visible"; 
-document.getElementById("nextButton6").style.visibility="hidden";
-
-
+document.getElementById("nextButton6").style.visibility="visible";
+document.getElementById('addspecimen6').style.visibility="visible";
+document.getElementById('addspecimen6').style.animation="addspecimen6 2s forwards";
 }
-
 
 
 function navNext1h()
 {
-  document.getElementById("canvas1f").style.visibility="hidden";
-  document.getElementById("canvas1h").style.visibility="visible";
-  document.getElementById("addspecimen3b").style.visibility="visible";
-  document.getElementById("addspecimen3c").style.visibility="visible";
+document.getElementById("canvas1f").style.visibility="hidden";
+document.getElementById("canvas1h").style.visibility="visible";
+document.getElementById("addspecimen4").style.visibility="visible";
 
-
-
- 
 }
+
 
 
 

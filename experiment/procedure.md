@@ -1,6 +1,5 @@
 ### These steps will be followed for the experiment
 
-
 1. Click on start experiment button to start the experiment.
 
 <img src="images/1a.png"/>
@@ -19,19 +18,19 @@ Step-2: Calculation of slope deflections equations.
 
 Step-3: Calculation of final moments.
 
+<img src="images/3.png"/>
+
+Step-4: Calculation for reactions.
+
 <img src="images/4.png"/>
-
-Step-4: Calculation for horizontal and vertical reactions.
-
-<img src="images/5.png"/>
 
 Step-5: Shear force diagram.
 
-<img src="images/6.png"/>
+<img src="images/5.png"/>
 
 Step-6: Bending moment diagram.
 
-<img src="images/7.png"/>
+
 
 
 
