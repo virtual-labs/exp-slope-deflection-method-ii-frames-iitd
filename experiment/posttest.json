@@ -9,10 +9,8 @@
         "d": "Elastic"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+
+        "d": "In the slope deflection method elastic behavior is assumed for materials"
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -26,10 +24,9 @@
         "d": "Truss"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+
+        "c": "Multistory building frame is best suited for the application of the slope deflection method "
+
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -43,17 +40,15 @@
         "d": "None of above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation 1  <a href='www.google.com'>here</a>"
+
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
 
     {
-      "question": "4. A single bay, single story frame under horizontal loads only is _______.",
+      "question": "4. A single bay, single story frame under horizontal loads only is a _______.",
       "answers": {
         "a": "Symmetrical frame ",
         "b": "Anti-Symmetrical frame",
@@ -61,10 +56,8 @@
         "d": "None of above "
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation 1  <a href='www.google.com'>here</a>"
+
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -80,10 +73,9 @@
         "d": "Find axial forces"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+
+        "c": "In the slope deflection method, equilibrium equations at joints are used to ensure that forces and moments are in balance"
+
       },
       "correctAnswer": "c",
       "difficulty": "beginner"

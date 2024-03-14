@@ -7,9 +7,12 @@
       if (w1 == 4 ) { 
         // Slowly display the text after 2 seconds
         setTimeout(function() {
-          document.getElementById("mfbc").innerHTML = "-12 kNm";
+          document.getElementById("button1").style.visibility="hidden";
           document.getElementById("wrong1a").style.visibility="hidden";
-        }, 800);
+        }, 1);
+        setTimeout(function() {
+          document.getElementById("mfbc").innerHTML = "12 kNm";
+        }, 600);
         setTimeout(function() {
           document.getElementById("text4").style.visibility="visible";
           document.getElementById("text5").style.visibility="visible";
@@ -29,8 +32,8 @@
         document.getElementById("L1").style.display = "block"; 
         document.getElementById("box2").style.display = "block"; 
         document.getElementById("wrongbox1").style.display = "block"; 
-        
-    
+        document.getElementById("button1").style.display = "block"; 
+        document.getElementById("button2").style.display = "block";
         }
     
         if (w1 == "" ) { 
@@ -60,10 +63,14 @@ function FixedmomentCB() {
   if (L1 == 36) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
-      document.getElementById("mfba").textContent = " 12 kNm" ;
+      document.getElementById("button2").style.visibility="hidden";
+   
       document.getElementById("wrong1b").style.visibility="hidden";
-    }, 800);
+    }, 1);
 
+    setTimeout(function() {
+      document.getElementById("mfba").textContent = " -12 kNm" ;
+    }, 600);
     setTimeout(function() {
       document.getElementById("nextButton1").style.visibility="visible";
       document.getElementById("addspecimen3").style.visibility="visible";
@@ -108,7 +115,7 @@ function FixedmomentCB() {
     
 
 //////////////////////////////////////////////////Page Complete////////////////////////////////////////////////////
-//////////////////////////////////////////////////w for SPAN AB////////////////////////////////////////////////////
+//////////////////////////////////////////////////Slope Deflection Equation////////////////////////////////////////////////////
 function Mab() {
   const Mfab = document.getElementById("Mfab").value;
   const ColumnL = document.getElementById("ColumnL").value;
@@ -117,27 +124,34 @@ function Mab() {
   if (Mfab == 0 && ColumnL == 4) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
+      document.getElementById("button3").style.visibility="hidden";
       document.getElementById("wrong2a").style.visibility="hidden";
     }, 1);
     setTimeout(function() {
-      document.getElementById("outputMab").innerHTML = "M<sub>AB</sub> = 2EIΘ<sub>B</sub> - 1.5 EIδ";
+      document.getElementById("outputMab").innerHTML = "M<sub>AB</sub> = 2EIΘ<sub>B</sub>";
+      document.getElementById("eq1").style.visibility="visible";
+
     }, 500);
     setTimeout(function() {
       document.getElementById("text16").style.visibility="visible";
       document.getElementById("text17").style.visibility="visible";
       document.getElementById("text17b").style.visibility="visible";
       document.getElementById("box6").style.visibility="visible";
-      document.getElementById("output1b2").innerHTML = "M<sub>BA</sub> = 4EIΘ<sub>B</sub> - 1.5 EIδ" ;
+      document.getElementById("output1b2").innerHTML = "M<sub>BA</sub> = 4EIΘ<sub>B</sub>" ;
+      document.getElementById("eq2").style.visibility="visible";
+
     }, 800);
     setTimeout(function() {
-      document.getElementById("output1c2").innerHTML = "M<sub>CD</sub> = 4EIΘ<sub>C</sub> - 1.5 EIδ";
+      document.getElementById("output1c2").innerHTML = "M<sub>CD</sub> = 4EIΘ<sub>C</sub>";
+      document.getElementById("eq3").style.visibility="visible";
       document.getElementById("box7").style.visibility="visible";
       document.getElementById("text18").style.visibility="visible";
       document.getElementById("text18b").style.visibility="visible";
 
     }, 1100);
     setTimeout(function() {
-      document.getElementById("output1d2").innerHTML = "M<sub>DC</sub> = 4EIΘ<sub>C</sub> - 1.5 EIδ" ;
+      document.getElementById("output1d2").innerHTML = "M<sub>DC</sub> = 2EIΘ<sub>C</sub>" ;
+      document.getElementById("eq4").style.visibility="visible";
       document.getElementById("text19").style.visibility="visible";
       document.getElementById("box8").style.visibility="visible";
       document.getElementById("text19b").style.visibility="visible";
@@ -154,7 +168,7 @@ function Mab() {
     document.getElementById("output1c2").style.display = "block"; 
     document.getElementById("output1d2").style.display = "block"; 
     document.getElementById("nextButton2").style.display = "block"; 
-
+    document.getElementById("button3").style.display = "block"; 
     document.getElementById("text16").style.display = "block"; 
     document.getElementById("text17").style.display = "block"; 
     document.getElementById("text17b").style.display = "block"; 
@@ -165,6 +179,11 @@ function Mab() {
     document.getElementById("box6").style.display = "block"; 
     document.getElementById("box7").style.display = "block"; 
     document.getElementById("box8").style.display = "block"; 
+    document.getElementById("eq1").style.display = "block"; 
+    document.getElementById("eq2").style.display = "block"; 
+    document.getElementById("eq3").style.display = "block"; 
+    document.getElementById("eq4").style.display = "block"; 
+
 
 
     }
@@ -192,19 +211,25 @@ function Mbc() {
   const BeamL = document.getElementById("BeamL").value;
 
   // Check if input1 is 4 and input2 is 1
-  if (Mfbc == -12 && BeamL == 6) { 
+  if (Mfbc == 12 && BeamL == 6) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
+      document.getElementById("button4").style.visibility="hidden";
       document.getElementById("wrong2b").style.visibility="hidden";
+
     }, 1);
       setTimeout(function() {
-      document.getElementById("outputMbc").innerHTML = "M<sub>BC</sub> = -12 + EIΘ<sub>B</sub> + 0.5 EIΘ<sub>C</sub>";
+      document.getElementById("outputMbc").innerHTML = "M<sub>BC</sub> = 12 + EIΘ<sub>B</sub> + 0.5 EIΘ<sub>C</sub>";
+      document.getElementById("text20").style.visibility="visible";
+      document.getElementById("eq5").style.visibility="visible";
+
     }, 500);
     setTimeout(function() {
       document.getElementById("text20").style.visibility="visible";
       document.getElementById("text20a").style.visibility="visible";
-      document.getElementById("text20b").style.visibility="visible";
-      document.getElementById("outputMcb").innerHTML = "M<sub>CB</sub> = +12 + 0.5EIΘ<sub>B</sub> + EIΘ<sub>C</sub>" ;
+      document.getElementById("outputMcb").innerHTML = "M<sub>CB</sub> = -12 + 0.5EIΘ<sub>B</sub> + EIΘ<sub>C</sub>" ;
+      document.getElementById("eq6").style.visibility="visible";
+
     }, 800);
 
 
@@ -229,11 +254,13 @@ function Mbc() {
     document.getElementById("nextButton3").style.display = "block"; 
     document.getElementById("text20").style.display = "block"; 
     document.getElementById("text20a").style.display = "block"; 
-    document.getElementById("text20b").style.display = "block"; 
     document.getElementById("box9").style.display = "block"; 
     document.getElementById("box11").style.display = "block"; 
-
+    document.getElementById("button4").style.display = "block"; 
     document.getElementById("addspecimen2d").style.display = "block"; 
+    document.getElementById("wrong2b").style.display = "block"; 
+    document.getElementById("eq5").style.display = "block"; 
+    document.getElementById("eq6").style.display = "block"; 
 
 
 
@@ -250,7 +277,7 @@ function Mbc() {
 
   } else {
     // Display an error message
-   document.getElementById("wrong2b").innerHTML = "Wrong Input. The value of M<sup>F</sup><sub>BC</sub>= -12, L= 6";
+   document.getElementById("wrong2b").innerHTML = "Wrong Input. The value of M<sup>F</sup><sub>BC</sub>= 12, L= 6";
   
    document.getElementById("wrong2b").style.display = "block";
   }
@@ -262,17 +289,17 @@ function Mbc() {
 
 function MomentAB() {
   const EIQb1 = document.getElementById("EIQb1").value;
-  const EIDelta1 = document.getElementById("EIDelta1").value;
 
 
   // Check if input1 is 3 and input2 is 2
-  if ( EIQb1 == 7.46 && EIDelta1 == 17.6 ) { 
+  if ( EIQb1 == -2.667  ) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
+      document.getElementById("button5").style.visibility="hidden";
       document.getElementById("wrong3a").style.visibility="hidden";
     }, 1);
       setTimeout(function() {
-      document.getElementById("outputMab2").innerHTML = "M<sub>AB</sub> = -11.47 kNm" ;
+      document.getElementById("outputMab2").innerHTML = "M<sub>AB</sub> = -5.334 kNm" ;
 
           }, 100);
           setTimeout(function() {
@@ -280,7 +307,7 @@ function MomentAB() {
       document.getElementById("text29").style.visibility="visible";
             document.getElementById("text29").style.visibility="visible";
 
-      document.getElementById("outputMba2").innerHTML="M<sub>BA</sub> = 3.47 kNm";
+      document.getElementById("outputMba2").innerHTML="M<sub>BA</sub> = -10.668 kNm";
 
     }, 800);
     setTimeout(function() {
@@ -288,9 +315,8 @@ function MomentAB() {
       document.getElementById("text31").style.visibility="visible";
       document.getElementById("b1").style.visibility="visible";
       document.getElementById("EIQc").style.visibility="visible";
-      document.getElementById("EIDelta2").style.visibility="visible";
-      document.getElementById("outputMbc2").innerHTML="M<sub>BC</sub> = -3.47 kNm";
-      document.getElementById("outputMcb2").innerHTML="M<sub>CB</sub> = 17.87 kNm";
+      document.getElementById("outputMbc2").innerHTML="M<sub>BC</sub> = 10.668 kNm";
+      document.getElementById("outputMcb2").innerHTML="M<sub>CB</sub> = -10.668 kNm";
 
     }, 1200);
     
@@ -305,13 +331,13 @@ function MomentAB() {
     document.getElementById("text31").style.display = "block";
     document.getElementById("b1").style.display = "block";
     document.getElementById("EIQc").style.display = "block";
-    document.getElementById("EIDelta2").style.display = "block";
     document.getElementById("outputMbc2").style.display = "block";
     document.getElementById("outputMcb2").style.display = "block";
+    document.getElementById("button5").style.display = "block";
 
   }
 
-  if (EIQb1 == "" && EIDelta1 == "" ) { 
+  if (EIQb1 == "") { 
     setTimeout(function() {
       document.getElementById("wrong3a").textContent = "Please Fill the Required Fields.";
 
@@ -322,7 +348,7 @@ function MomentAB() {
 else        {
   
   // Display an error message
- document.getElementById("wrong3a").innerHTML = "Wrong Input EIΘ<sub>B</sub> = 7.46 & EIδ = 17.6"  ;
+ document.getElementById("wrong3a").innerHTML = "Wrong Input EIΘ<sub>B</sub> = -2.667"  ;
 
 document.getElementById("wrong3a").style.display = "block";
 }
@@ -332,17 +358,18 @@ document.getElementById("wrong3a").style.display = "block";
 
 function MomentCD() {
   const EIQc = document.getElementById("EIQc").value;
-  const EIDelta2 = document.getElementById("EIDelta2").value;
+
 
 
   // Check if input1 is 3 and input2 is 2
-  if ( EIQc == 2.13 && EIDelta2 == 17.6 ) { 
+  if ( EIQc == 2.667  ) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
+      document.getElementById("b1").style.visibility="hidden";
       document.getElementById("wrong3b").style.visibility="hidden";
     }, 1);
     setTimeout(function() {
-      document.getElementById("outputMcd2").innerHTML = "M<sub>CD</sub> = -17.87 kNm " ;
+      document.getElementById("outputMcd2").innerHTML = "M<sub>CD</sub> = 10.668 kNm " ;
 
           }, 100);
           setTimeout(function() {
@@ -350,7 +377,7 @@ function MomentCD() {
 
       document.getElementById("text32").style.visibility="visible";
       document.getElementById("text33").style.visibility="visible";
-      document.getElementById("outputMdc2").innerHTML="M<sub>DC</sub> = -22.13 kNm";
+      document.getElementById("outputMdc2").innerHTML="M<sub>DC</sub> = 5.334 kNm";
 
     }, 1000);
   
@@ -361,10 +388,11 @@ function MomentCD() {
     document.getElementById("text32").style.display = "block";
     document.getElementById("text33").style.display = "block";
     document.getElementById("nextButton4").style.display = "block";
+    document.getElementById("b1").style.display = "block";
 
   }
 
-  if (EIQc == "" && EIDelta2 == "" ) { 
+  if (EIQc == "" ) { 
     setTimeout(function() {
       document.getElementById("wrong3b").textContent = "Please Fill the Required Fields.";
 
@@ -375,7 +403,7 @@ function MomentCD() {
 else        {
   
   // Display an error message
- document.getElementById("wrong3b").innerHTML = "Wrong Input EIΘ<sub>C</sub> = 2.13 & EIδ = 17.6"  ;
+ document.getElementById("wrong3b").innerHTML = "Wrong Input EIΘ<sub>C</sub> = 2.667 "  ;
 
 document.getElementById("wrong3b").style.display = "block";
 }
@@ -391,13 +419,14 @@ function reaction1H() {
 
 
   // Check if input1 is 3 and input2 is 2
-  if (inputMab == 11.47 && inputMba == 3.47 ) { 
+  if (inputMab == -5.334 && inputMba == -10.668 ) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
+      document.getElementById("button6").style.visibility="hidden";
       document.getElementById("wrong4a").style.visibility="hidden";
     }, 1);
     setTimeout(function() {
-      document.getElementById("outputHa").innerHTML = "H<sub>A</sub> = 2 kN " ;
+      document.getElementById("outputHa").innerHTML = "H<sub>A</sub> = -4 kN " ;
     }, 100);
 
     setTimeout(function() {
@@ -417,7 +446,7 @@ function reaction1H() {
     document.getElementById("text34").style.display = "block";
     document.getElementById("text35").style.display = "block";
     document.getElementById("b2").style.display = "block";
-
+    document.getElementById("button6").style.display = "block";
 
     
   }
@@ -434,7 +463,7 @@ function reaction1H() {
     
     // Display an error message
     setTimeout(function() {
-   document.getElementById("wrong4a").innerHTML = "Wrong Input, M<sub>AB</sub>= 11.47 and M<sub>BA</sub>= 3.47"  ;
+   document.getElementById("wrong4a").innerHTML = "Wrong Input, M<sub>AB</sub>= -5.334 and M<sub>BA</sub>= -10.668"  ;
   }, 1);
   document.getElementById("wrong4a").style.display = "block";
   }
@@ -447,13 +476,14 @@ function reaction2H() {
 
 
   // Check if input1 is 3 and input2 is 2
-  if (Ha == -2 ) { 
+  if (Ha == -4 ) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
+      document.getElementById("b2").style.visibility="hidden";
       document.getElementById("wrong4b").style.visibility="hidden";
     }, 1);
     setTimeout(function() {
-      document.getElementById("outputHb").innerHTML = "H<sub>B</sub> = 10 kN " ;
+      document.getElementById("outputHb").innerHTML = "H<sub>B</sub> = 4 kN " ;
 
     }, 100);
     setTimeout(function() {
@@ -461,9 +491,9 @@ function reaction2H() {
       document.getElementById("text37").style.visibility="visible";
       document.getElementById("text38").style.visibility="visible";
       document.getElementById("text39").style.visibility="visible";
-      document.getElementById("outputHc").innerHTML ="H<sub>C</sub> = 10 kN";
-      document.getElementById("outputHd").innerHTML ="H<sub>D</sub> = 10 kN";
-    }, 1000);
+      document.getElementById("outputHc").innerHTML ="H<sub>D</sub> =  4 kN";
+      document.getElementById("outputHd").innerHTML ="H<sub>D</sub> = -4 kN";
+    }, 500);
 
     setTimeout(function() {
       document.getElementById("text40").style.visibility="visible";
@@ -472,7 +502,6 @@ function reaction2H() {
       document.getElementById("text43").style.visibility="visible";
       document.getElementById("inputudl").style.visibility="visible";
       document.getElementById("inputMba2").style.visibility="visible";
-      document.getElementById("inputMcd2").style.visibility="visible";
       document.getElementById("b3").style.visibility="visible";
       document.getElementById("addspecimen2f").style.visibility="visible";
 
@@ -496,8 +525,8 @@ function reaction2H() {
   document.getElementById("text43").style.display = "block";
   document.getElementById("inputudl").style.display = "block";
   document.getElementById("inputMba2").style.display = "block";
-  document.getElementById("inputMcd2").style.display = "block";
   document.getElementById("b3").style.display = "block";
+  document.getElementById("b2").style.display = "block";
   document.getElementById("addspecimen2f").style.display = "block";
   document.getElementById("addspecimen2g").style.display = "block";
   document.getElementById("transwhite1a").style.display = "block";
@@ -518,7 +547,7 @@ function reaction2H() {
   else        {
     
     // Display an error message
-   document.getElementById("wrong4b").innerHTML = "Wrong Input, H<sub>A</sub> = -2";
+   document.getElementById("wrong4b").innerHTML = "Wrong Input, H<sub>A</sub> = -4";
 
   document.getElementById("wrong4b").style.display = "block";
   }
@@ -528,16 +557,16 @@ function reaction2H() {
 function reactionV() {
   const inputudl = document.getElementById("inputudl").value;
   const inputMba2 = document.getElementById("inputMba2").value;
-  const inputMcd2 = document.getElementById("inputMcd2").value;
 
   // Check if input1 is 3 and input2 is 2
-  if (inputudl == 4 && inputMba2 == 3.47 && inputMcd2 == 17.87 ) { 
+  if (inputudl == 4 && inputMba2 == 6  ) { 
     // Slowly display the text after 2 seconds
     setTimeout(function() {
       document.getElementById("wrong4c").style.visibility="hidden";
+      document.getElementById("b3").style.visibility="hidden";
     }, 1);
     setTimeout(function() {
-      document.getElementById("outputVb").innerHTML = "V<sub>B</sub>= 9.6 kN " ;
+      document.getElementById("outputVb").innerHTML = "V<sub>B</sub>= -12 kN " ;
     }, 200);
 
     setTimeout(function() {
@@ -548,7 +577,7 @@ function reactionV() {
     }, 600);
 
     setTimeout(function() {
-      document.getElementById("outputVc").innerHTML ="V<sub>C</sub>= 14.4 kN";
+      document.getElementById("outputVc").innerHTML ="V<sub>C</sub>= 12 kN";
       document.getElementById("nextButton6").style.visibility="visible";
 
     }, 1700);
@@ -561,10 +590,10 @@ function reactionV() {
   document.getElementById("text45").style.display = "block";
   document.getElementById("reactionB2").style.display = "block";
   document.getElementById("nextButton6").style.display = "block";
-
+  document.getElementById("b3").style.display = "block";
   }
 
-    if (inputudl == "" && inputMba2 == "" && inputMcd2 == "" ) { 
+    if (inputudl == "" && inputMba2 == "" ) { 
       setTimeout(function() {
         document.getElementById("wrong4c").textContent = "Please Fill the Required Fields.";
 
@@ -575,7 +604,7 @@ function reactionV() {
   else        {
     
     // Display an error message
-   document.getElementById("wrong4c").innerHTML = "Wrong Input, UDL = 4 kN/m, M<sub>AB</sub>= 3.47 & M<sub>CD</sub>= 17.87 kN";
+   document.getElementById("wrong4c").innerHTML = "Wrong Input, W (UDL) = 4 kN/m, l (span length) = 6 m";
 
   document.getElementById("wrong4c").style.display = "block";
   }
@@ -677,6 +706,11 @@ setTimeout(function() {
 document.getElementById('addspecimen1').style.visibility="visible";
 document.getElementById('addspecimen1').style.animation="addspecimen1 2s forwards";
 
+document.getElementById('addspecimen2').style.visibility="visible";
+document.getElementById('addspecimen2').style.animation="addspecimen2 1s forwards";
+
+document.getElementById('addspecimen3').style.visibility="visible";
+document.getElementById('addspecimen3').style.animation="addspecimen3 1s forwards";
 }
 
 
@@ -718,9 +752,10 @@ document.getElementById('text18b').style.visibility="hidden";
 document.getElementById('box8').style.visibility="hidden";
 document.getElementById('text19').style.visibility="hidden";
 document.getElementById('text19b').style.visibility="hidden";
-
-
-
+document.getElementById('eq1').style.visibility="hidden";
+document.getElementById('eq2').style.visibility="hidden";
+document.getElementById('eq3').style.visibility="hidden";
+document.getElementById('eq4').style.visibility="hidden";
 }
 
 
@@ -733,7 +768,6 @@ document.getElementById("canvas1c").style.visibility="hidden";
 document.getElementById("canvas1d").style.visibility="visible";
 document.getElementById('text20').style.visibility="hidden";
 document.getElementById('text20a').style.visibility="hidden";
-document.getElementById('text20b').style.visibility="hidden";
 document.getElementById('text21').style.visibility="hidden";
 document.getElementById('text22').style.visibility="hidden";
 document.getElementById('text23').style.visibility="hidden";
@@ -746,7 +780,8 @@ document.getElementById('addspecimen2d').style.visibility="hidden";
 document.getElementById("nextButton3").style.visibility="hidden";
 document.getElementById('box9').style.visibility="hidden";
 document.getElementById('box11').style.visibility="hidden";
-
+document.getElementById('eq5').style.visibility="hidden";
+document.getElementById('eq6').style.visibility="hidden";
 
 
 
@@ -760,7 +795,6 @@ function navNext1e()
 {
 
   document.getElementById("EIQc").style.visibility="hidden";
-document.getElementById("EIDelta2").style.visibility="hidden";
 document.getElementById("b1").style.visibility="hidden";
 document.getElementById("box12").style.visibility="visible";
   document.getElementById('nextButton4').style.visibility="hidden";
@@ -799,7 +833,6 @@ document.getElementById("canvas1f").style.visibility="visible";
 document.getElementById("Ha").style.visibility="hidden";
 document.getElementById("inputudl").style.visibility="hidden";
 document.getElementById("inputMba2").style.visibility="hidden";
-document.getElementById("inputMcd2").style.visibility="hidden";
 
 document.getElementById("text34").style.visibility="hidden";
 document.getElementById("text35").style.visibility="hidden";
@@ -831,7 +864,7 @@ function navNext1h()
   document.getElementById("canvas1f").style.visibility="hidden";
   document.getElementById("canvas1h").style.visibility="visible";
   document.getElementById("addspecimen3c").style.visibility="visible";
-
+  document.getElementById("addspecimen3d").style.visibility="visible";
 
 
  
