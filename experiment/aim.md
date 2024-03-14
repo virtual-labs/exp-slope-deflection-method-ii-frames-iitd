@@ -1,1 +1,1 @@
-#### This experiment aims to analyse a beam using slope deflection method, resulting in rotations, member end forces and moments, shear force and bending moment diagrams and the deflected profile. 
+#### This experiment covers the analysis of a sway frame  using slope deflection method, computing the rotations, member end forces and moments and drawing the shear force and the bending moment diagrams of the deflected profile. 
