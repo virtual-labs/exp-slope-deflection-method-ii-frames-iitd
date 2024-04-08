@@ -1,0 +1,84 @@
+{
+  "version": 2.0,
+  "questions": [{
+      "question": "1. In structural engineering, the slope deflection method is primarily used for analyzing?",
+      "answers": {
+        "a": " Determinate structures",
+        "b": "Indeterminate structures",
+        "c": "Non-elastic materials",
+        "d": "Simple beams"
+      },
+      "explanations": {
+
+        "b": "The slope deflection method is primarily used for analyzing the indeterminate structures "
+
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. What are unknown displacements for a non-sway frame?  ",
+      "answers": {
+        "a": "Translations",
+        "b": "Rotations ",
+        "c": "Translations and rotations",
+        "d": "Non of the above"
+      },
+      "explanations": {
+        "a": "Translations are unknown displacements for a non-sway frame  <a href='www.google.com'>here</a>"
+
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3.What are the unknown values assigned at the ends of each member in the slope deflection method?",
+      "answers": {
+        "a": "Forces",
+        "b": "Rotations",
+        "c": "Displacements and Rotations",
+        "d": "Moments"
+      },
+      "explanations": {
+      
+       
+        "c": "Displacements and Rotations are assigned at the ends of each member in the slope deflection method"
+       
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which of the following shall be a non-sway frame? ",
+      "answers": {
+        "a": "Symmetrical frame under horizontal loads ",
+        "b": "Symmetrical frame under vertical loads ",
+        "c": "Symmetrical frame under both horizontal & vertical loads ",
+        "d": "All of above "
+      },
+      "explanations": {
+
+        "b": "A non-sway frame Symmetrical frame under vertical loads "
+
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The slope deflection method is _______.",
+      "answers": {
+        "a": "Numerical technique",
+        "b": "Analytical technique",
+        "c": "Empirical method",
+        "d": "Experimental method"
+      },
+      "explanations": {
+
+        "b": "The slope deflection method is analytical technique "
+
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
