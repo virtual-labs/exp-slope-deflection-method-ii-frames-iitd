@@ -4,12 +4,11 @@
 <b>Discipline | <b>Civil Engineering
 :--|:--|
 <b> Lab | <b> Structural Analysis II Lab
-<b> Experiment|     <b> Slope Deflection Method II (Frames)
-
+<b> Experiment|     <b> Slope Deflection Method-I (Beams)
 
 ### About the Experiment 
 
-This experiment covers the analysis of a sway frame  using slope deflection method, computing the rotations, member end forces and moments and drawing the shear force and the bending moment diagrams of the deflected profile. 
+This experiment aims to analyse a beam structure using slope deflection method. 
 
 <b>Name of Developer | <b> Prof. Suresh Bhalla 
 :--|:--|
@@ -22,4 +21,3 @@ This experiment covers the analysis of a sway frame  using slope deflection meth
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 | Sayed Sameer Hasan |  | Civil Engineering | IIT Delhi | sameerh.iitd@gmail.com
-
