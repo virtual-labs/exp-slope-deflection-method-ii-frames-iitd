@@ -21,14 +21,14 @@ The slope deflection method is a classical displacement-based structural analysi
 •	For each member, the fixed end moments are computed using the known loads and the geometry of the beam, taking into account the support conditions at the ends, using well-known standard formulas. <br>
 
 <br>
-<div align="center"><img src="images/F1.PNG"></div>
+<div align="center"><img src="images/F1.png"></div>
 <br>
 
 <strong>The next step is the formation of slope-deflection equations:</strong> <br>
 •	The slope-deflection equations relates the rotation (Ɵ) and the relative vertical displacement (δ) with the bending moments at the ends.<br>
 •	These equations are derived based on the relationship between bending moment, rotations, and the material properties of the beam (Elastic Modulus and Moment of Inertia), as follows. <br>
 <br>
-<div align="center"><img src="images/f2.PNG"></div>
+<div align="center"><img src="images/f2.png"></div>
 <br>
 where: M<sup>F</sup><sub>AB</sub> and M<sup>F</sup><sub>BA</sub> = Fixed ended moments, Ɵ<sub>A</sub> and Ɵ<sub>B</sub> = Beam end rotations, δ<sub>AB</sub> = δ<sub>B</sub> - δ<sub>A</sub> = Relative vertical displacement between end A and B.<br>
 •	Ɵ<sub>A</sub> and Ɵ<sub>B</sub> - anticlockwise (+ve).<br>
